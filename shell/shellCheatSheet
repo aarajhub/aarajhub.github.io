@@ -1,0 +1,11 @@
+Create a list:
+
+list=("this" "is" "a" "list")
+
+Iterate through for loop:
+
+for s in "${list[@]}"
+do
+  echo $s
+  echo `ssh araj@$s ls -ltr`
+done
